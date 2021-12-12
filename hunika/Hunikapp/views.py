@@ -7,7 +7,7 @@ def welcome(request):
     return render(request,'index.html')
     # python -m pip install africastalking
     AfricasUsername=''
-    api_key=''
+    api_key='  '
 africastalking.initialize(AfricasUsername,api_key)
 @csrf_exempt
 def ussdApp(request):
