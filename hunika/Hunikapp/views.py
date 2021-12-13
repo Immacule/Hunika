@@ -6,8 +6,8 @@ import django.views.decorations.scrf import csrf_exempt
 def welcome(request):
     return render(request,'index.html')
     # python -m pip install africastalking
-    AfricasUsername=''
-    api_key='  '
+    AfricasUsername='turabayoimmacule@gmail.com'
+    api_key=' 3cb04d0921eeec55708f88c74fbe5bbb6d7cc362972b435fb54969da3aa9d41f'
 africastalking.initialize(AfricasUsername,api_key)
 @csrf_exempt
 def ussdApp(request):
@@ -22,7 +22,7 @@ def ussdApp(request):
          response =""
          #  main menu for our application
          if text == '':
-             response =  "CON Murakaza neza ku Kigegapp \n"
+             response =  "CON Murakaza neza Hunikapp \n"
              response += "1. Kubitsa  igihingwa \n"
              response += "2. kureba igihe bizacururizwa \n"
          elif text == '1':
